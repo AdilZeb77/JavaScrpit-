@@ -43,3 +43,18 @@ const retirement = function agecalc(birthyear) {
   return `You retires in ${retage} years`;
 };
 console.log(retirement(2000));
+
+// functon Calling into another Function
+
+function friut(juices) {
+  return juices * 2;
+}
+
+function FoodProcessor(apple, oranges) {
+  const AppleJuice = friut(apple);
+  const orangeJuice = friut(oranges);
+  const fruitjuice = `Juice of ${AppleJuice} pice of Apple , And ${orangeJuice} of Orange`;
+  return fruitjuice;
+}
+
+console.log(FoodProcessor(2, 4));
