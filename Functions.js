@@ -22,3 +22,24 @@ console.log(appleOrangeJuice);
 
 const AppleOrangeJuices2 = fruitProcessor(10, 2);
 console.log(AppleOrangeJuices2);
+
+// Function Decleration / function Expression
+
+//function Declertaion
+function agecalc(birthyear) {
+  const age = 2024 - birthyear;
+  return age;
+}
+
+const finalAge = agecalc(2000);
+console.log(`${finalAge} is Your Real Age`);
+
+//Function expression
+
+const retirement = function agecalc(birthyear) {
+  const age = 2024 - birthyear;
+  const retage = 65 - age;
+
+  return `You retires in ${retage} years`;
+};
+console.log(retirement(2000));
