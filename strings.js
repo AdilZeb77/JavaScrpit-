@@ -87,3 +87,15 @@ for (const flight of flights.split("+")){
 
 console.log(output);
 }
+
+
+// Credit card String
+
+const Careditcard= function(number){
+ const str=number+'';
+ const last=str.slice(-4);
+ return last.padStart(str.length, " *");
+}
+const credt=Careditcard(234567834567);
+console.log(credt);
+console.log(Careditcard(234567898765456789));
