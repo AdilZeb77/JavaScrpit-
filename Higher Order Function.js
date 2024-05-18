@@ -11,3 +11,16 @@ const highOrderFn= function (str,fn){
 
 
 highOrderFn('java Script is the best Language ', splitStr);
+
+
+// Function Return A function 
+
+const greeting=function(greet)
+{
+ return function(name)
+{
+console.log(`${greet} ${name}`);
+}}
+
+const greetmessage= greeting("hello");
+greetmessage("Adil")
