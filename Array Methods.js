@@ -65,3 +65,17 @@ numarr.forEach((mov, i, arr) => {
     console.log(`Movement ${i + 1} : ${mov} is less then zero`);
   }
 });
+
+//Map Reduce And Filter Method
+
+const maparray = ["Adil", "Talha", "Umer", "john"];
+
+maparray.map((data, index, arr) => console.log(index, data, arr));
+
+const movement = [200, 244, 5, 600, 700];
+const euro = 1.1;
+const movementdata = movement.map((mov) => {
+  return mov * euro;
+});
+
+console.log(movementdata);
